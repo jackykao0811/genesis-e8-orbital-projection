@@ -1,0 +1,36 @@
+{
+  "test_plan": "8D global stability verification via s/p/d projection closure proxy",
+  "host": {
+    "name": "HostA-iMac (deterministic proxy)",
+    "note": "本工作區缺少可直接回灌 NS 主引擎核心；本輸出為 8D 投影閉合代理驗證。"
+  },
+  "params": {
+    "Re": 150000.0,
+    "N": 512,
+    "kappa": 1.068,
+    "L": 33
+  },
+  "lambda_defined": "zeta(3)+8/775",
+  "orbital_projection": {
+    "total_rel_baseline": 7.076286024239292e-05,
+    "total_rel_8d": 5.022927088064283e-10,
+    "s_rel_baseline": 0.5261060794218229,
+    "p_rel_baseline": 0.7283462689032661,
+    "d_rel_baseline": 0.7489169563243259,
+    "s_rel_8d": 0.9995668307976753,
+    "p_rel_8d": 0.17192405295251986,
+    "d_rel_8d": 0.8289512235416319
+  },
+  "stability_claim": {
+    "proxy_pass": true,
+    "threshold": 1e-06,
+    "measured_total_rel_8d": 5.022927088064283e-10
+  },
+  "artifacts": {
+    "orbital_json": "/Users/yaokaikao/Downloads/hetu5D/PROJECT_GENESIS_8D/hetu8D_Final_Closure.json"
+  },
+  "raw": {
+    "noise_amp_base": 0.18,
+    "noise_amp_8d": 0.0007005824986063324
+  }
+}
